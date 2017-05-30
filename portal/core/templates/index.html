@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="csstransforms csstransforms3d csstransitions">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,51 +24,62 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
     <div class="container">
         <div class="navbar-header">
+           <!-- <div class="navbar-brand"> -->
+                <!-- aqui logo -->
+                <img src="{% static 'images/LOCOMOTIVA.png' %}" width="81px" height="66px">
+            <!-- </div> -->
+
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">Menu</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Principal</a>
         </div>
-
+        <!-- <a class="navbar-brand" href="#">Principal</a> -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Shows</a>
-                </li>
-                <li>
-                    <a href="#">Local</a>
-                </li>
-                <li>
-                    <a href="#">Ingressos</a>
-                </li>
-                <li>
-                    <a href="#">Cadastro</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
-                </li>
-            </ul>
+            <div class="pull-right" style="padding-top:1%;">
+
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Shows</a>
+                        </li>
+                        <li>
+                            <a href="#">Local</a>
+                        </li>
+                        <li>
+                            <a href="#">Ingressos</a>
+                        </li>
+                        <li>
+                            <a href="#">Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                
+            </div>
         </div>
     </div>
-</nav>
+        <!--
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        </div>
 
+    </div>-->
+</nav>
 
 <div class="container">
 
-    <header class="hero-feature">
-        <div class="thumbnail">
-            <img src="{% static 'images/Fundo1100x400.jpg' %}">
-        </div>
-    </header>
+    <header class="hero-feature thumbnail">
 
-    <hr>
+            <img src="{% static 'images/Fundo1100x650.jpg' %}" width="1140px" height="450px">
+
+    </header>
 
     <div class="row text-center">
         <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
