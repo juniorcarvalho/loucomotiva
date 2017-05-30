@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.venv
+.idea
+*.sqlite3
+*pyc
+__pycache__
+.ipynb_checkpoints/
+staticfiles
+start.sh
+design
+notebook/
+*.ipynb
