@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="{% static 'css/heroic-features.css'%}" rel="stylesheet">
+    <link href="{% static 'css/animate.css'%}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,13 +39,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Festival</a>
+                <a class="navbar-brand" href="#">Principal</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Edições</a>
+                        <a href="#">Shows</a>
                     </li>
                     <li>
                         <a href="#">Local</a>
@@ -71,7 +72,7 @@
         <!-- Jumbotron Header -->
         <header class="hero-feature">
             <div class="thumbnail">
-                <img src="{% static 'images/Fundo.jpg' %}">    
+                <img src="{% static 'images/Fundo1100x400.jpg' %}">    
             </div>    
         </header>
 
@@ -87,8 +88,7 @@
 
         <!-- Page Features -->
         <div class="row text-center">
-
-            <div class="col-md-6 col-sm-6 hero-feature">
+            <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
                 <div class="thumbnail">
                     <img src="http://placehold.it/800x500" alt="">
                     <div class="caption">
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-6 hero-feature">
+            <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
                 <div class="thumbnail">
                     <img src="http://placehold.it/800x500" alt="">
                     <div class="caption">
@@ -114,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-6 hero-feature">
+            <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
                 <div class="thumbnail">
                     <img src="http://placehold.it/800x500" alt="">
                     <div class="caption">
@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-6 hero-feature">
+            <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
                 <div class="thumbnail">
                     <img src="http://placehold.it/800x500" alt="">
                     <div class="caption">
@@ -144,7 +144,7 @@
         <!-- /.row -->
 
         <hr>
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-delay="0.3s">
             <h3>Cadastro</h3>
             <div class="col-md-12">
                 <div class="col-md-12">
@@ -197,6 +197,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 
 </body>
 
