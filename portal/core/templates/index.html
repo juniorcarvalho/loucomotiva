@@ -24,13 +24,23 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
 <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 
     <div class="container">
         <div class="navbar-header">
-           <!-- <div class="navbar-brand"> -->
-                <!-- aqui logo -->
-                <img src="{% static 'images/LOCOMOTIVA.png' %}" width="81px" height="66px">
+            <!-- <div class="navbar-brand"> -->
+            <!-- aqui logo -->
+            <img src="{% static 'images/Locomotiva.png' %}" width="81px" height="66px">
             <!-- </div> -->
 
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -45,39 +55,39 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="pull-right" style="padding-top:1%;">
 
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#">Shows</a>
-                        </li>
-                        <li>
-                            <a href="#">Local</a>
-                        </li>
-                        <li>
-                            <a href="#">Ingressos</a>
-                        </li>
-                        <li>
-                            <a href="#">Cadastro</a>
-                        </li>
-                        <li>
-                            <a href="#">Contato</a>
-                        </li>
-                    </ul>
-                
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Shows</a>
+                    </li>
+                    <li>
+                        <a href="#">Local</a>
+                    </li>
+                    <li>
+                        <a href="#">Ingressos</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
-        <!--
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        </div>
+    <!--
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div>
 
-    </div>-->
+</div>-->
 </nav>
 
 <div class="container">
 
     <header class="hero-feature thumbnail">
 
-            <img src="{% static 'images/Fundo1100x650.jpg' %}" width="1140px" height="450px">
+        <img src="{% static 'images/Fundo1100x650.jpg' %}">
 
     </header>
 
@@ -131,18 +141,10 @@
         </div>
 
         <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-
-                <div class="caption">
-                    <h3>Ingressos</h3>
-
-                    <p>Ingressos já a venda, saiba onde e como comprar.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-default">Saiba mais</a>
-                    </p>
-                </div>
+            <div class="fb-page" data-href="https://www.facebook.com/loucomotivafestivalbq/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/loucomotivafestivalbq/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz Festival - Barbacena</a>
+                </blockquote>
             </div>
         </div>
     </div>
