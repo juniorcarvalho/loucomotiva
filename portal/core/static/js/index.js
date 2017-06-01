@@ -1,4 +1,4 @@
 jQuery.noConflict();
 jQuery(function ($) {
-    $("#celular").mask("99-99999-9999");
+    $("#id_celular").mask("99-99999-9999");
 });
