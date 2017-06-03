@@ -1,4 +1,5 @@
 {% load static %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="pt-br" class="csstransforms csstransforms3d csstransitions">
 <head>
@@ -24,13 +25,24 @@
 </head>
 <body>
 
-<nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
-    <div class="container">
+<nav id="main-menu" class="navbar navbar-default navbar-fixed-top " role="navigation">
+
+    <div class="container container-site">
         <div class="navbar-header">
             <!-- <div class="navbar-brand"> -->
             <!-- aqui logo -->
-            <img src="{% static 'images/Locomotiva.png' %}" width="81px" height="66px">
+            <img class="logoBarra" src="{% static 'images/Locomotiva.png' %}">
             <!-- </div> -->
 
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -75,7 +87,7 @@
 
 <div class="container">
 
-    <header class="hero-feature thumbnail">
+    <header class="hero-feature-principal thumbnail">
 
         <img src="{% static 'images/Fundo1100x400.jpg' %}">
 
@@ -100,7 +112,7 @@
 
         <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
             <div class="thumbnail">
-                <img src="{% static 'images/Desafio.png'%}">
+                <img src="{% static 'images/Desafio.png' %}">
 
                 <div class="caption">
                     <h3>Desafio de bandas</h3>
@@ -138,7 +150,8 @@
                  data-hide-cover="false" data-show-facepile="true">
                 <blockquote cite="https://www.facebook.com/loucomotivafestivalbq/"
                             class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz Festival - Barbacena</a>
+                    <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz Festival -
+                        Barbacena</a>
                 </blockquote>
             </div>
         </div>
@@ -149,30 +162,64 @@
     <div class="row wow fadeIn" data-wow-delay="0.3s">
         <div class="col-md-6">
             <h3>Cadastro</h3>
-            <input type="text" class="form-control" placeholder="Nome" maxlength="100">
 
-            <br/>
-
-            <input type="text" class="form-control" placeholder="Email" maxlength="255">
-
-            <br/>
-
-            <div class="row">
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Celular" id="celular">
-                </div>
-                <div class="col-md-1">
-                    <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-6">
-                    <div class="checkbox">
-                        <label><input type="checkbox" checked="true" value="">Receber novidades por WhatsApp</label>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        {{ form.nome | add_class:"form-control" }}
+                        {{ form.nome.errors }}
                     </div>
                 </div>
-            </div>
-            <br/>
 
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        {{ form.email | add_class:"form-control" }}
+                        {{ form.email.errors }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 form-group">
+                        {{ form.celular | add_class:"form-control" }}
+                        {{ form.celular.errors }}
+                    </div>
+                    <div class="col-md-1">
+                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.whatsapp }}
+                        {{ form.whatsapp.label }}
+                        {{ form.whatsapp.errors }}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </div>
+
+
+                <!--
+                <input type="text" id="nome" class="form-control" placeholder="Nome" maxlength="100">
+                <br/>
+                <input type="text" id="email" class="form-control" placeholder="Email" maxlength="255">
+                <br/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Celular" id="celular">
+                    </div>
+                    <div class="col-md-1">
+                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="whatsapp" checked="true" value="">Receber novidades por WhatsApp</label>
+                        </div>
+                    </div>
+                </div> -->
+
+            </form>
         </div>
 
         <div class="col-md-6">

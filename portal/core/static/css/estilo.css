@@ -17,3 +17,34 @@ body {
   border: 2px solid #fff;
 }
 
+.thumbnail{
+    border: none;
+}
+
+.hero-feature-principal {
+
+    border: none; !important;
+
+}
+
+.hero-feature-principal img {
+    width: 100%;
+}
+
+.logoBarra{
+  width: 50px;
+  margin-top: 7px;
+}
+
+.navbar{
+    height: 65px;
+}
+
+.container-site {
+    margin-top: 1px;
+}
+
+.imagemPrincipal{
+
+
+}
