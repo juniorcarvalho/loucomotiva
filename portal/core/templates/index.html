@@ -1,28 +1,32 @@
 {% load static %}
 {% load widget_tweaks %}
-<!DOCTYPE html>
-<html lang="pt-br" class="csstransforms csstransforms3d csstransitions">
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset=" utf-8 ">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+    <meta name="description " content=" ">
+    <meta name="author " content=" ">
 
     <title>Loucomotiva Blues & Jazz Festival</title>
 
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{% static 'css/animate.css' %}" rel="stylesheet">
     <link href="{% static 'css/estilo.css' %}" rel="stylesheet">
-    <script src="https://use.fontawesome.com/41b1cf381f.js"></script>
+    <link href="{% static 'css/imagens.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js "></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js "></script>
     <![endif]-->
 </head>
+
 <body>
 
 <div id="fb-root"></div>
@@ -36,16 +40,16 @@
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<nav id="main-menu" class="navbar navbar-default navbar-fixed-top " role="navigation">
+<div class="container">
+    <header class="imgTop thumbnail">
+        <img src="{% static 'images/imgTop.jpg' %}">
+    </header>
+</div>
 
-    <div class="container container-site">
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
         <div class="navbar-header">
-            <!-- <div class="navbar-brand"> -->
-            <!-- aqui logo -->
-            <img class="logoBarra" src="{% static 'images/Locomotiva.png' %}">
-            <!-- </div> -->
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Menu</span>
                 <span class="icon-bar"></span>
@@ -53,199 +57,166 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <!-- <a class="navbar-brand" href="#">Principal</a> -->
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="pull-right" style="padding-top:1%;">
-
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Shows</a>
-                    </li>
-                    <li>
-                        <a href="#">Local</a>
-                    </li>
-                    <li>
-                        <a href="#">Ingressos</a>
-                    </li>
-                    <li>
-                        <a href="#">Cadastro</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-
-            </div>
+            <ul class="nav navbar-nav">
+                <li class="page-scroll"><a href="#historia">O Festival</a></li>
+                <li class="page-scroll"><a href="#passado">Passado</a></li>
+                <li class="page-scroll"><a href="#presente">Presente</a></li>
+                <li class="page-scroll"><a href="#cadastro">Cadastro</a></li>
+                <li class="page-scroll"><a href="#">Contato</a></li>
+            </ul>
         </div>
     </div>
-    <!--
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    </div>
-
-</div>-->
 </nav>
 
 <div class="container">
 
-    <header class="hero-feature-principal thumbnail">
-
-        <img src="{% static 'images/Fundo1100x400.jpg' %}">
-
-    </header>
-
-    <div class="row text-center">
-        <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
-
-                <div class="caption">
-                    <h3>Edições</h3>
-
-                    <p>Veja tudo que rolou em outras edições do festival.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-default">Saiba mais</a>
-                    </p>
-                </div>
+    <section id="historia">
+        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
+            <div class="thumbnail col-md-6 imgHistoria">
+                <img src="{% static 'images/historia.jpg' %}">
+            </div>
+            <div class="col-md-6">
+                <p>O festival nasceu da idéia</p>
             </div>
         </div>
+    </section>
 
-        <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
-            <div class="thumbnail">
-                <img src="{% static 'images/Desafio.png' %}">
+    <br>
+    <br>
 
-                <div class="caption">
-                    <h3>Desafio de bandas</h3>
+    <section id="passado">
+        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
+            <div class="thumbnail col-md-6 imgPassado">
+                <img src="{% static 'images/passado.jpg' %}" alt="">
+            </div>
 
-                    <p>Quer apresentar sua banda no festival ? Se liga no desafio de bandas.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-default">Saiba mais</a>
-                    </p>
-                </div>
+            <div class="col-md-6">
+                <p>Edição anterior...o que rolou...</p>
             </div>
         </div>
+    </section>
 
-        <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
-            <div class="thumbnail">
-                <img src="http://placehold.it/800x500" alt="">
+    <br>
+    <br>
 
-                <div class="caption">
-                    <h3>Local</h3>
-
-                    <p>Conheça o local do evento, como chegar e a estrutura.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-default">Saiba mais</a>
-                    </p>
-                </div>
+    <section id="presente">
+        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
+            <div class="thumbnail col-md-6 imgPresente">
+                <img src="{% static 'images/presente.jpg' %}">
+            </div>
+            <div class="col-md-6">
+                <p>Edição atual...o que vai rolar...</p>
             </div>
         </div>
+    </section>
 
-        <div class="wow fadeIn col-md-6 col-sm-6 hero-feature" data-wow-delay="0.3s">
-            <div class="fb-page"
-                 data-href="https://www.facebook.com/loucomotivafestivalbq/"
-                 data-tabs="timeline" data-width="800" data-height="500"
-                 data-small-header="false" data-adapt-container-width="true"
-                 data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/loucomotivafestivalbq/"
-                            class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz Festival -
-                        Barbacena</a>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="row wow fadeIn" data-wow-delay="0.3s">
-        <div class="col-md-6">
-            <h3>Cadastro</h3>
-
-            <form method="POST">
-                {% csrf_token %}
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        {{ form.nome | add_class:"form-control" }}
-                        {{ form.nome.errors }}
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        {{ form.email | add_class:"form-control" }}
-                        {{ form.email.errors }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 form-group">
-                        {{ form.celular | add_class:"form-control" }}
-                        {{ form.celular.errors }}
-                    </div>
-                    <div class="col-md-1">
-                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-6">
-                        {{ form.whatsapp }}
-                        {{ form.whatsapp.label }}
-                        {{ form.whatsapp.errors }}
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
-                    </div>
-                </div>
-
-
-                <!--
-                <input type="text" id="nome" class="form-control" placeholder="Nome" maxlength="100">
-                <br/>
-                <input type="text" id="email" class="form-control" placeholder="Email" maxlength="255">
-                <br/>
-                <div class="row">
-                    <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Celular" id="celular">
-                    </div>
-                    <div class="col-md-1">
-                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="checkbox">
-                            <label><input type="checkbox" id="whatsapp" checked="true" value="">Receber novidades por WhatsApp</label>
+    <br>
+    <br>
+    <section id="cadastro">
+        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
+            <div class="col-md-6">
+                <h1>Cadastro</h1>
+                <p>Informe seus dados e fique por dentro das novidades do Loucomotiva Blues & Jazz Festival</p>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row input-group cadastro">
+                        <div class="col-md-12 form-group">
+                            {{ form.nome | add_class:"form-control" }}
+                            {{ form.nome.errors }}
                         </div>
                     </div>
-                </div> -->
 
-            </form>
-        </div>
+                    <div class="row input-group cadastro">
+                        <div class="col-md-12 form-group">
+                            {{ form.email | add_class:"form-control" }}
+                            {{ form.email.errors }}
+                        </div>
+                    </div>
+                    <div class="row input-group cadastro">
+                        <div class="col-xs-12 col-md-6 form-group">
+                            {{ form.celular | add_class:"form-control" }}
+                            {{ form.celular.errors }}
+                        </div>
+                        <div class="col-xs-10 col-md-6 checkbox">
+                            {{ form.whatsapp }}
+                            {{ form.whatsapp.label }}
+                            {{ form.whatsapp.errors }}
+                        </div>
+                        {#                    <div class="col-md-1 icones">#}
+                        {#                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>#}
+                        {#                    </div>#}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button type="submit" class="btn btn-default">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-6 local">
+                <h1>Local do Evento</h1>
+                <p>Rodovia...</p>
+                <div id="map-canvas">
 
-        <div class="col-md-6">
-            <h3>Localização</h3>
-
-            <div id="map-canvas">
-
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <br>
+    <br>
 
     <footer>
         <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+            <div class="col-md-6">
+                <h1>Siga-nos</h1>
+                <p>#loucomotivafestival</p>
+                <a class="cor" href="https://www.facebook.com/loucomotivafestivalbq/" target="_blank">
+                    <i class="fa fa-facebook fa-2x marginr10" aria-hidden="true"></i>
+                </a>
+                <a class="cor" href="https://www.instagram.com/loucomotivafestival/" target="_blank">
+                    <i class="fa fa-instagram fa-2x marginr10" aria-hidden="true"></i>
+                </a>
+                <a class="cor" href="" target="_blank">
+                    <i class="fa fa-youtube fa-2x marginr10" aria-hidden="true"></i>
+                </a>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/loucomotivafestivalbq/"
+                     data-tabs="timeline" data-width="800" data-height="500"
+                     data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/loucomotivafestivalbq/"
+                                class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz
+                            Festival -
+                            Barbacena</a>
+                    </blockquote>
+                </div>
+                <br>
+                <br>
             </div>
         </div>
     </footer>
 </div>
 
+
 <script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/index.js' %}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbVAgaJfVTnYnvVOZQRv61JBtz-eajvk"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="https://use.fontawesome.com/41b1cf381f.js "></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbVAgaJfVTnYnvVOZQRv61JBtz-eajvk"></script>
+<script src="https://use.fontawesome.com/41b1cf381f.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+
 
 <script>
     new WOW().init();
@@ -255,7 +226,7 @@
     function initialize() {
         var mapOptions = {
             center: new google.maps.LatLng(-21.256817, -43.806456),
-            zoom: 17,
+            zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             draggable: false,
@@ -286,16 +257,4 @@
 
 </body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
 </html>
-
-

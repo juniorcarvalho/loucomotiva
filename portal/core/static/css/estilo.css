@@ -1,13 +1,100 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Indie Flower', cursive;
+    color: #CD950C;
+}
 
+p {
+    font-family: 'Indie Flower', cursive;
+    color: #CD950C;
+    font-size: 1.5em
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    color: #CD950C;
+}
 
 body {
-    padding-top: 75px;
-    background: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #64686d;
-    line-height: 26px;
+    background: #1C1C1C;
+    padding-top: 40px;
+}
+
+.navbar-default {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: #1C1C1C;
+    border: none;
+    font-size: 3.7em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #CD950C;
+}
+
+
+/* item selecionado*/
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #CD950C;
+    background-color: #363636;
+}
+
+
+/* mouse over no item de menu */
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #CD950C;
+    background-color: #363636;
+    ;
+}
+
+.borda{
+    border-width: medium;
+    border-style: dashed;
+    border-color: #CD950C;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left:12px;
+    padding-right: 12px;
+}
+
+.cadastro{
+    margin: 5px;    
+    width: 100%;       
+}
+
+.cadastro input{
+    background-color:transparent; 
+    color:#CD950C; 
+    font-weight:bold; 
+    
+}
+
+.icones {
+    color: #CD950C;
+}
+
+.checkbox{
+    color:#CD950C; 
+    font-family: 'Indie Flower', cursive;    
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.btn-default{
+    color:#CD950C; 
+    background-color: #1C1C1C;    
+}
+
+.btn-default:hover{
+    background-color: #363636;    
+    color:#CD950C;
 }
 
 #map-canvas {
@@ -17,34 +104,14 @@ body {
   border: 2px solid #fff;
 }
 
-.thumbnail{
-    border: none;
+.cor{
+    color:#CD950C;
 }
 
-.hero-feature-principal {
-
-    border: none; !important;
-
+.marginr10{
+    margin-right: 10px;
 }
 
-.hero-feature-principal img {
-    width: 100%;
-}
-
-.logoBarra{
-  width: 50px;
-  margin-top: 7px;
-}
-
-.navbar{
-    height: 65px;
-}
-
-.container-site {
-    margin-top: 1px;
-}
-
-.imagemPrincipal{
-
-
+.form-control:focus {
+    border-color: #CD950C;
 }
