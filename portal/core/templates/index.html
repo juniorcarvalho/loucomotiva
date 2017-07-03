@@ -236,17 +236,17 @@
                 {% csrf_token %}
 
                     <div class="col-md-12 form-group">
-                        {{ form.nome | add_class:"form-control" }}
+                        {{ form.nome | add_class:"form-control campos"}}
                         {{ form.nome.errors }}
                     </div>
 
                     <div class="col-md-12 form-group">
-                        {{ form.email | add_class:"form-control" }}
+                        {{ form.email | add_class:"form-control campos" }}
                         {{ form.email.errors }}
                     </div>
 
                     <div class="col-md-12 form-group">
-                        {{ form.celular | add_class:"form-control" }}
+                        {{ form.celular | add_class:"form-control campos" }}
                         {{ form.celular.errors }}
                     </div>
 
