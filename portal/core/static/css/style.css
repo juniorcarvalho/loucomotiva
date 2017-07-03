@@ -1,0 +1,274 @@
+body {
+    font-family: 'Prata', serif;
+    background-color: #E8E8E8;
+    line-height: 1.8;
+}
+
+h1,
+.h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.padding0 {
+    padding: 0px;
+}
+
+.padding40 {
+    padding: 40px;
+}
+
+.white {
+    color: white !important;
+}
+
+.margin5 {
+    margin: 5px;
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.margin20 {
+    margin: 20px auto;
+}
+
+.margin40 {
+    margin: 40px auto;
+}
+
+.marginr10 {
+    margin-right: 10px;
+}
+
+.margint20 {
+    margin-top: 20px;
+}
+
+.margin80auto {
+    margin: 80px auto !important;
+}
+
+.black {
+    color: rgb(51, 51, 51);
+}
+
+.black:visited {
+    color: rgb(51, 51, 51) !important;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-footer {
+    width: 100%;
+    margin: 2px;
+}
+
+
+/* NAVBAR */
+
+.navbar-default .navbar-nav>li>a {
+    position: relative;
+}
+
+.navbar-default .navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav>li>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.navbar-r1000 {
+    border: 0px;
+    background-color: #1a1a1a;
+    /*background-color: transparent;*/
+    color: white;
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-toggle-r1000 {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.brand-img {
+    width: 100px;
+    margin-top: 16px;
+    display: none;
+}
+
+.brand-img_small {
+    width: 60px;
+    margin-top: 12px;
+    margin-left: 60px;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #fff;
+    /*background-color:#1a1a1a;*/
+    /*background-color: transparent;*/
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+}
+
+.dropdown-menu {
+    /*background-color:#1a1a1a;*/
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+    height: 3px;
+    border-radius: 0px;
+}
+
+.navbar-inner {
+    min-height: 0px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:visited {
+    color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.carousel-inner img {
+    margin: auto;
+    width: 100%;
+}
+
+.caixa {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 5px 0 5px 0;
+    background: #FFF;
+    padding: 10px;
+}
+
+.caixa-foto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 0 0 0;
+    background: #FFF;
+    padding: 10px;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+}
+
+.caixa img {
+    margin-bottom: 5px;
+}
+
+#myCarousel {
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 1px;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    height: 400px;
+}
+
+.cor {
+    color: #FFF;
+}

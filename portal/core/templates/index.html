@@ -1,24 +1,22 @@
+<!doctype html>
 {% load static %}
 {% load widget_tweaks %}
-<!doctype html>
 <html lang="pt-BR">
 
 <head>
     <meta charset=" utf-8 ">
     <meta http-equiv="X-UA-Compatible " content="IE=edge ">
     <meta name="viewport " content="width=device-width, initial-scale=1 ">
-    <meta name="description " content=" ">
-    <meta name="author " content=" ">
-
+    <meta name="description " content="Loucomotiva Blues & Jazz Festival">
+    <meta name="author " content="Júnior Carvalho-joseadolfojr@gmail.com">
     <title>Loucomotiva Blues & Jazz Festival</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
-    <link href="{% static 'css/estilo.css' %}" rel="stylesheet">
-    <link href="{% static 'css/imagens.css' %}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,199 +26,279 @@
 </head>
 
 <body>
-
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9&appId=228968287599229";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="container">
-    <header class="imgTop thumbnail">
-        <img src="{% static 'images/imgTop.jpg' %}">
-    </header>
-</div>
-
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Menu</span>
+<nav class="navbar navbar-default navbar-r1000">
+    <div class="container-fluid" style="height:100%;">
+        <div class="navbar-header centered">
+            <!--<a href="#"><img src="imagens/Locomotiva.png" class="brand-img_small"></a>-->
+            <button type="button" class="navbar-toggle collapsed navbar-toggle-r1000" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="page-scroll"><a href="#historia">O Festival</a></li>
-                <li class="page-scroll"><a href="#passado">Passado</a></li>
-                <li class="page-scroll"><a href="#presente">Presente</a></li>
-                <li class="page-scroll"><a href="#cadastro">Cadastro</a></li>
-                <li class="page-scroll"><a href="#">Contato</a></li>
-            </ul>
+        <div class="collapse navbar-collapse centered" id="bs-example-navbar-collapse-1">
+            <!--<div><a href="#"><img src="imagens/Locomotiva.png" class="brand-img"></a></div>-->
+            <div class="navbar-margin">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="li-icons" style="display:inline-flex;">
+                        <a href="https://www.facebook.com/loucomotivafestivalbq/" target="_blank"><i
+                                class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/loucomotivafestival/" target="_blank"><i
+                                class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                        <!--                        <a href="" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+                    <a href="" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>-->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#festival">Festival</a></li>
+                    <li><a href="#2017">2017</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Cadastro</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static 'imagens/logo1024.jpeg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'imagens/logo2-1024.jpeg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'imagens/desafio1024.jpeg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'imagens/etta1024.jpeg' %}" alt="">
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
 <div class="container">
-
-    <section id="historia">
-        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
-            <div class="thumbnail col-md-6 imgHistoria">
-                <img src="{% static 'images/historia.jpg' %}">
-            </div>
-            <div class="col-md-6">
-                <p>O festival nasceu da idéia</p>
-            </div>
-        </div>
-    </section>
-
-    <br>
-    <br>
-
-    <section id="passado">
-        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
-            <div class="thumbnail col-md-6 imgPassado">
-                <img src="{% static 'images/passado.jpg' %}" alt="">
-            </div>
-
-            <div class="col-md-6">
-                <p>Edição anterior...o que rolou...</p>
+    <section id="festival">
+        <div class="row caixa">
+            <div class="col-md-12 ">
+                <h2>O Festival</h2>
+                <p>
+                    O “Loucomotiva”, nome que deu origem ao projeto, vem da junção da conhecida expressão “Barbacena
+                    cidade dos loucos” com locomotiva (nome de veículo ferroviário), fazendo referencia a nossa antiga
+                    estação ferroviária da cidade. Neste cenário favorável
+                    e promissor do Jazz e Blues, Barbacena tem papel de grande destaque na execução de um festival desse
+                    gênero por ser uma cidade extremamente ligada à música, clima favorável e artistas talentosos.</p>
+                </p>
+                <p>
+                    Foi assim que nasceu em 2016, o Loucomotiva Blues & Jazz festival. Sua primeira edição contou com
+                    três dias de muito agito e música de qualidade, passaram pelo palco principal nomes como Rodrigo
+                    Nézio, Léo Gandelman, Jefferson Gonçalves e banda com participação
+                    especial de Laudir de Oliveira lançando o CD de 25 anos de carreira, César Santos e Ducondé,
+                    Caffeine Trio, Refinaria, Vivían e os Valvulados, Willian de Magalhães, Zero Grau Celso, Marcos
+                    Paulo e Alcatéia Blues e Blues Will Never
+                    Die.
+                </p>
             </div>
         </div>
     </section>
 
-    <br>
-    <br>
 
-    <section id="presente">
-        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
-            <div class="thumbnail col-md-6 imgPresente">
-                <img src="{% static 'images/presente.jpg' %}">
+    <ul class="row caixa-foto">
+        <li class="col-md-3 clearfix ">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto2.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix ">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto3.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix ">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto4.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix ">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto6.jpeg' %} ">
+        </li>
+    </ul>
+    <ul class="row caixa-foto">
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto7.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto8.jpeg' %} ">
+        </li>
+        <li class=" col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto10.jpeg' %}">
+        </li>
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto11.jpeg' %}">
+        </li>
+    </ul>
+    <ul class="row caixa-foto">
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto12.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto13.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto14.jpeg' %} ">
+        </li>
+        <li class="col-md-3 clearfix">
+            <img class="img-responsive pull-left img-rounded " src="{% static 'imagens/foto16.jpeg' %} ">
+        </li>
+    </ul>
+
+    <section id="2017">
+        <div class="row caixa">
+            <h2>2017</h2>
+            <p>
+                O “Loucomotiva Jazz & Blues Festival” traz a proposta de estimular e valorizar a música e principalmente
+                os gêneros ‘Jazz e blues’ na cidade de Barbacena e região.
+            </p>
+            <div class="col-md-4 ">
+                <h4>Sexta-feira, 11 de Agosto</h4>
+                Rodrigo Nézio</br>
+                Jefferson Gonçalves</br>
+                Gabriela Pepino
             </div>
-            <div class="col-md-6">
-                <p>Edição atual...o que vai rolar...</p>
+            <div class="col-md-4 ">
+                <h4>Sábado, 12 de Agosto</h4>
+                Tânia Azze</br>
+                Lúdica Música</br>
+                Falcatrua
+            </div>
+            <div class="col-md-4 ">
+                <h4>Domingo, 13 de Agosto</h4>
+                Refinaria</br>
+                João Bosco</br>
+                Banda Local
             </div>
         </div>
     </section>
 
-    <br>
-    <br>
-    <section id="cadastro">
-        <div class="row wow fadeIn borda" data-wow-delay="0.3s">
-            <div class="col-md-6">
-                <h1>Cadastro</h1>
-                <p>Informe seus dados e fique por dentro das novidades do Loucomotiva Blues & Jazz Festival</p>
-                <form method="POST">
-                    {% csrf_token %}
-                    <div class="row input-group cadastro">
-                        <div class="col-md-12 form-group">
-                            {{ form.nome | add_class:"form-control" }}
-                            {{ form.nome.errors }}
-                        </div>
-                    </div>
-
-                    <div class="row input-group cadastro">
-                        <div class="col-md-12 form-group">
-                            {{ form.email | add_class:"form-control" }}
-                            {{ form.email.errors }}
-                        </div>
-                    </div>
-                    <div class="row input-group cadastro">
-                        <div class="col-xs-12 col-md-6 form-group">
-                            {{ form.celular | add_class:"form-control" }}
-                            {{ form.celular.errors }}
-                        </div>
-                        <div class="col-xs-10 col-md-6 checkbox">
-                            {{ form.whatsapp }}
-                            {{ form.whatsapp.label }}
-                            {{ form.whatsapp.errors }}
-                        </div>
-                        {#                    <div class="col-md-1 icones">#}
-                        {#                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>#}
-                        {#                    </div>#}
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <button type="submit" class="btn btn-default">Cadastrar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-6 col-lg-6 local">
-                <h1>Local do Evento</h1>
-                <p>Rodovia...</p>
-                <div id="map-canvas">
-
-                </div>
+    <div class="row caixa">
+        <div class="col-md-6">
+            <h2>Local</h2>
+            <p>
+                Descendo com a névoa da serra da Mantiqueira e o frio do mês de Agosto, clima favorável que torna o
+                festival ainda mais charmoso, o “Loucomotiva Blues & Jazz Festival” escolheu como sede o campo de
+                futebol do Grêmio, localizado na Colônia Rodrigo Silva,
+                local onde já é conhecido por ser sede de várias festas importantes para a cidade.
+            </p>
+            <p>
+                De fácil acesso, menos de 10 minutos do centro da cidade, o campo do Grêmio é um achado em meio à selva
+                de concreto e impressiona pela amplidão de seus espaços, o verde de suas gramas, as árvores e pela
+                infraestrutura (boa iluminação, segurança, estacionamento,
+                etc).
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="map-canvas">
             </div>
         </div>
-    </section>
-    <br>
-    <br>
+    </div>
 
     <footer>
         <div class="row">
             <div class="col-md-6">
-                <h1>Siga-nos</h1>
-                <p>#loucomotivafestival</p>
-                <a class="cor" href="https://www.facebook.com/loucomotivafestivalbq/" target="_blank">
-                    <i class="fa fa-facebook fa-2x marginr10" aria-hidden="true"></i>
+                <h2>Cadastro</h2>
+                <form method="POST">
+                {% csrf_token %}
+
+                    <div class="col-md-12 form-group">
+                        {{ form.nome | add_class:"form-control" }}
+                        {{ form.nome.errors }}
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                        {{ form.email | add_class:"form-control" }}
+                        {{ form.email.errors }}
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                        {{ form.celular | add_class:"form-control" }}
+                        {{ form.celular.errors }}
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                        <button type="submit" class="btn btn-default">Cadastrar</button>
+                    </div>
+
+                </form>
+
+                <h2>Contato</h2>
+                <a class="cor ">
+                    <i class="fa fa-envelope fa-2x marginr10 " aria-hidden="true "></i> loucomotiva@loucomotiva.com.br
                 </a>
-                <a class="cor" href="https://www.instagram.com/loucomotivafestival/" target="_blank">
-                    <i class="fa fa-instagram fa-2x marginr10" aria-hidden="true"></i>
+                </br>
+                <a class="cor ">
+                    <i class="fa fa-phone-square fa-2x marginr10 " aria-hidden="true "></i> 32.9999.9999
                 </a>
-                <a class="cor" href="" target="_blank">
-                    <i class="fa fa-youtube fa-2x marginr10" aria-hidden="true"></i>
-                </a>
-                <br>
-                <br>
+                </br>
+                </br>
             </div>
-            <div class="col-md-6">
-                <div class="fb-page"
-                     data-href="https://www.facebook.com/loucomotivafestivalbq/"
-                     data-tabs="timeline" data-width="800" data-height="500"
-                     data-small-header="false" data-adapt-container-width="true"
-                     data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/loucomotivafestivalbq/"
-                                class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/loucomotivafestivalbq/">Loucomotiva Blues &amp; Jazz
-                            Festival -
-                            Barbacena</a>
-                    </blockquote>
-                </div>
-                <br>
-                <br>
+
+            <div class="col-md-6 ">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Floucomotivafestivalbq%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=228968287599229
+                        " width="340 " height="214 " style="border:none;overflow:hidden " scrolling="no "
+                        frameborder="0 " allowTransparency="true ">
+                </iframe>
+                </br>
+                <a class="cor " href="https://www.facebook.com/loucomotivafestivalbq/ " target="_blank ">
+                    <i class="fa fa-facebook fa-2x marginr10 " aria-hidden="true "></i>
+                </a>
+                <a class="cor " href="https://www.instagram.com/loucomotivafestival/ " target="_blank ">
+                    <i class="fa fa-instagram fa-2x marginr10 " aria-hidden="true "></i>
+                </a>
             </div>
         </div>
     </footer>
 </div>
 
-
 <script src="{% static 'js/jquery.js' %}"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-<script src="https://use.fontawesome.com/41b1cf381f.js "></script>
-<script src="static/js/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNbVAgaJfVTnYnvVOZQRv61JBtz-eajvk"></script>
-<script src="https://use.fontawesome.com/41b1cf381f.js"></script>
+<script src="{% static 'js/photo-gallery.js' %}"></script>
 <script src="{% static 'js/index.js' %}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
+        crossorigin="anonymous "></script>
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>#}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js "></script>
+<script src="https://use.fontawesome.com/41b1cf381f.js "></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChEBnxulcKiGECigF1HBWEIDi3TSJYiJU"></script>
 
-
-<script>
-    new WOW().init();
-</script>
+{#<script>#}
+{#    new WOW().init();#}
+{#</script>#}
 
 <script>
     function initialize() {
@@ -229,7 +307,7 @@
             zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
-            draggable: false,
+            draggab: false,
             panControl: true,
             zoomControl: true,
             mapTypeControl: true,
@@ -238,7 +316,7 @@
             overviewMapControl: true,
             rotateControl: true,
         };
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        var map = new google.maps.Map(document.getElementById("map-canvas "), mapOptions);
 
         var locations = [
             ['Loucomotiva', -21.256817, -43.806456]
@@ -254,7 +332,6 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
 </body>
 
 </html>
