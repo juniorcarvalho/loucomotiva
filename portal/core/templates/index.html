@@ -6,7 +6,7 @@
 <head>
     <meta charset=" utf-8 ">
     <meta http-equiv="X-UA-Compatible " content="IE=edge">
-{#    <meta name="viewport " content="width=device-width, initial-scale=1">#}
+    {#    <meta name="viewport " content="width=device-width, initial-scale=1">#}
     <meta name="viewport " content="width=device-width">
     <meta name="description " content="Loucomotiva Blues & Jazz Festival">
     <meta name="author " content="Júnior Carvalho-joseadolfojr@gmail.com">
@@ -110,8 +110,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#festival">Festival</a></li>
                     <li><a href="#2017">2017</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    {#                    <li><a href="">Cadastro</a></li>#}
                 </ul>
             </div>
         </div>
@@ -135,9 +135,9 @@
         <div class="item">
             <img src="{% static 'imagens/logo2-1024.jpeg' %}" alt="">
         </div>
-        <div class="item">
-            <img src="{% static 'imagens/desafio1024.jpeg' %}" alt="">
-        </div>
+        {#        <div class="item">#}
+        {#            <img src="{% static 'imagens/desafio1024.jpeg' %}" alt="">#}
+        {#        </div>#}
         <div class="item">
             <img src="{% static 'imagens/etta1024.jpeg' %}" alt="">
         </div>
@@ -292,61 +292,64 @@
         </div>
     </div>
 
-    <footer>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Cadastro</h2>
-                <form method="POST">
-                    {% csrf_token %}
+    <section id="contato">
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    {#                <h2>Cadastro</h2>#}
+                    {#                <form method="POST">#}
+                    {#                    {% csrf_token %}#}
+                    {##}
+                    {#                    <div class="col-md-12 form-group">#}
+                    {#                        {{ form.nome | add_class:"form-control campos" }}#}
+                    {#                        {{ form.nome.errors }}#}
+                    {#                    </div>#}
+                    {##}
+                    {#                    <div class="col-md-12 form-group">#}
+                    {#                        {{ form.email | add_class:"form-control campos" }}#}
+                    {#                        {{ form.email.errors }}#}
+                    {#                    </div>#}
+                    {##}
+                    {#                    <div class="col-md-12 form-group">#}
+                    {#                        {{ form.celular | add_class:"form-control campos" }}#}
+                    {#                        {{ form.celular.errors }}#}
+                    {#                    </div>#}
+                    {##}
+                    {#                    <div class="col-md-12 form-group">#}
+                    {#                        <button type="submit" class="btn btn-default">Cadastrar</button>#}
+                    {#                    </div>#}
+                    {##}
+                    {#                </form>#}
 
-                    <div class="col-md-12 form-group">
-                        {{ form.nome | add_class:"form-control campos" }}
-                        {{ form.nome.errors }}
-                    </div>
+                    <h2>Contato</h2>
+                    {#                <a class="cor ">#}
+                    {#                    <i class="fa fa-envelope fa-2x marginr10 " aria-hidden="true "></i> loucomotiva@loucomotiva.com.br#}
+                    {#                </a>#}
+                    {#                </br>#}
+                    <a class="cor ">
+                        <i class="fa fa-phone-square fa-2x marginr10 " aria-hidden="true "></i>(32)99118-0910
+                    </a><br/>
+                    <a class="cor " href="https://www.facebook.com/loucomotivafestivalbq/ " target="_blank ">
+                        <i class="fa fa-facebook fa-2x marginr10 " aria-hidden="true "></i>
+                    </a>
+                    <a class="cor " href="https://www.instagram.com/loucomotivafestival/ " target="_blank ">
+                        <i class="fa fa-instagram fa-2x marginr10 " aria-hidden="true "></i>
+                    </a>
 
-                    <div class="col-md-12 form-group">
-                        {{ form.email | add_class:"form-control campos" }}
-                        {{ form.email.errors }}
-                    </div>
+                    </br>
+                    </br>
+                </div>
 
-                    <div class="col-md-12 form-group">
-                        {{ form.celular | add_class:"form-control campos" }}
-                        {{ form.celular.errors }}
-                    </div>
-
-                    <div class="col-md-12 form-group">
-                        <button type="submit" class="btn btn-default">Cadastrar</button>
-                    </div>
-
-                </form>
-
-                <h2>Contato</h2>
-                <a class="cor ">
-                    <i class="fa fa-envelope fa-2x marginr10 " aria-hidden="true "></i> loucomotiva@loucomotiva.com.br
-                </a>
-                </br>
-                <a class="cor ">
-                    <i class="fa fa-phone-square fa-2x marginr10 " aria-hidden="true "></i> 32.9999.9999
-                </a>
-                </br>
-                </br>
-            </div>
-
-            <div class="col-md-6 ">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Floucomotivafestivalbq%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=228968287599229
+                <div class="col-md-6 ">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Floucomotivafestivalbq%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=228968287599229
                         " width="340 " height="214 " style="border:none;overflow:hidden " scrolling="no "
-                        frameborder="0 " allowTransparency="true ">
-                </iframe>
-                </br>
-                <a class="cor " href="https://www.facebook.com/loucomotivafestivalbq/ " target="_blank ">
-                    <i class="fa fa-facebook fa-2x marginr10 " aria-hidden="true "></i>
-                </a>
-                <a class="cor " href="https://www.instagram.com/loucomotivafestival/ " target="_blank ">
-                    <i class="fa fa-instagram fa-2x marginr10 " aria-hidden="true "></i>
-                </a>
+                            frameborder="0 " allowTransparency="true ">
+                    </iframe>
+                    </br>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 </div>
 
 {#<script src="{% static 'js/jquery.js' %}"></script>#}

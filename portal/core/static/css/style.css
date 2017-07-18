@@ -1,16 +1,52 @@
 body {
     font-family: 'Prata', serif;
     line-height: 1.8;
-    font-size: 16px;
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 991px) {
     body {
         font-size: 20px;
     }
 
     .caixa {
-        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: justify;
+        margin: 5px 0 5px 0;
+        background: #FFF;
+        padding: 10px;
+    }
+
+    footer {
+        height: 400px;
+        background-color: #000;
+        color: #FFF;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .caixa {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        text-align: justify;
+        margin: 5px 0 5px 0;
+        background: #FFF;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #000;
+        color: #FFF;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        height: 250px;
     }
 }
 
@@ -226,15 +262,6 @@ h2 {
     width: 100%;
 }
 
-.caixa {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    text-align: justify;
-    margin: 5px 0 5px 0;
-    background: #FFF;
-    padding: 10px;
-}
-
 .caixa-foto {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -267,14 +294,6 @@ ul {
 ul li {
     list-style: none;
     margin-bottom: 1px;
-}
-
-footer {
-    background-color: #000;
-    color: #FFF;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    height: 400px;
 }
 
 .cor {
