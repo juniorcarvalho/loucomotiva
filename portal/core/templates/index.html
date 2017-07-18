@@ -32,40 +32,8 @@
             crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js "></script>
     <script src="https://use.fontawesome.com/41b1cf381f.js "></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChEBnxulcKiGECigF1HBWEIDi3TSJYiJU"></script>
-
-    <script>
-        function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(-21.256817, -43.806456),
-                zoom: 16,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                draggab: false,
-                panControl: true,
-                zoomControl: true,
-                mapTypeControl: true,
-                scaleControl: true,
-                streetViewControl: true,
-                overviewMapControl: true,
-                rotateControl: true,
-            };
-            var map = new google.maps.Map(document.getElementById("map-canvas "), mapOptions);
-
-            var locations = [
-                ['Loucomotiva', -21.256817, -43.806456]
-            ];
-
-            for (i = 0; i < locations.length; i++) {
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                    title: locations[i][0],
-                    map: map
-                });
-            }
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChEBnxulcKiGECigF1HBWEIDi3TSJYiJU&callback=initialize"></script>
 </head>
 
 <body>
@@ -353,6 +321,39 @@
 </div>
 
 {#<script src="{% static 'js/jquery.js' %}"></script>#}
+<script>
+    function initialize() {
+        var mapOptions = {
+{#            center: new google.maps.LatLng(-21.256817, -43.806456),#}
+            center: {lat:-21.256817, lng: -43.806456},
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            draggab: false,
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: true,
+            streetViewControl: true,
+            overviewMapControl: true,
+            rotateControl: true,
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        var locations = [
+            ['Loucomotiva', -21.256817, -43.806456]
+        ];
+
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                title: locations[i][0],
+                map: map
+            });
+        }
+    }
+    //google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 
 </body>
